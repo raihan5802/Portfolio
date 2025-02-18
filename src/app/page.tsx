@@ -74,7 +74,7 @@ export default function Home() {
   };
 
   const achievements = [
-    "Top 6 in HerWILL AI for Equality Datathon",
+    "Second Position in HerWILL AI for Equality Datathon",
     "22nd Position in Synnax Datathon",
     "Shortlisted in Cisco IoT Hackathon 2024",
     "Top 50 in Robi Datathon 3.0",
