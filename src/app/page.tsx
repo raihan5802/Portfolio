@@ -54,6 +54,13 @@ export default function Home() {
       highlights: ["R² ~0.999 with XGBoost", "ARIMA forecasting", "KMeans clustering"],
       tech: ["Python", "Machine Learning", "Data Analysis"],
       github: "https://github.com/raihan5802/Netflix-Data-Analysis"
+    },
+    {
+      title: "LLM Comparison Dashboard",
+      description: "An interactive dashboard that compares responses from multiple LLM models (GPT-4, Gemini Pro, Llama) side-by-side with performance metrics and analysis.",
+      highlights: ["Multi-model API integration", "Real-time performance metrics", "Interactive response comparison", "Cross-model evaluation"n],
+      tech: ["Next.js", "React", "TailwindCSS", "Chart.js", "OpenAI API", "Google Generative AI (Gemini) API", "Replicate API", "JavaScript", "RESTful APIs"],
+      github: "https://github.com/raihan5802/llm-comparison-dashboard"
     }
   ];
 
