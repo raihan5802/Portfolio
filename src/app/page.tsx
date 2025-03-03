@@ -21,6 +21,18 @@ export default function Home() {
 
   const projects = [
     {
+      title: "MovieLens Recommender System",
+      description: "Comprehensive recommendation system for personalized content suggestions, featuring A/B testing and large-scale data processing.",
+      highlights: [
+        "Multiple recommendation models with best RMSE of 0.87",
+        "Statistical A/B testing framework with 1.39% CTR improvement",
+        "Processed 500,000+ user interactions using Polars",
+        "Flask API and AWS SageMaker deployment architecture"
+      ],
+      tech: ["Python", "Recommendation Systems", "A/B Testing", "Polars", "Flask", "AWS SageMaker", "Matrix Factorization", "Collaborative Filtering"],
+      github: "https://github.com/raihan5802/movielens-recommender" // Update with your actual repo URL
+    },
+    {
       title: "LLM Comparison Dashboard",
       description: "An interactive dashboard that compares responses from multiple LLM models (GPT-4, Gemini Pro, Llama) side-by-side with performance metrics and analysis.",
       highlights: ["Multi-model API integration", "Real-time performance metrics", "Interactive response comparison", "Cross-model evaluation"],
@@ -35,13 +47,6 @@ export default function Home() {
       github: "https://github.com/raihan5802/BiasDetect"
     },
     {
-      title: "Illegal Dumping Detection",
-      description: "AI-driven system for garbage dump detection using YOLOv8",
-      highlights: ["96.0% mAP@IoU=0.5", "Custom COCO dataset", "Real-time visualization"],
-      tech: ["YOLOv8", "React", "Computer Vision"],
-      github: "https://github.com/raihan5802/Illegal-Dumping-Garbage-Detection-Segmentation"
-    },
-    {
       title: "CV Analyzer",
       description: "AI-powered resume analysis tool with LLM integration",
       highlights: ["NLP analysis", "PDF processing", "Fault-tolerant design"],
@@ -49,11 +54,11 @@ export default function Home() {
       github: "https://github.com/raihan5802/CV-Analyzer"
     },
     {
-      title: "Multi-Task Learning MNIST",
-      description: "CNN-based multi-task learning for digit classification and parity",
-      highlights: ["96.20% classification accuracy", "97.17% parity accuracy", "VGG architecture"],
-      tech: ["PyTorch", "CNN", "Multi-task Learning"],
-      github: "https://github.com/raihan5802/Multi-Task-Learning-Handwritten-Digit-Classification-Parity-Check"
+      title: "Illegal Dumping Detection",
+      description: "AI-driven system for garbage dump detection using YOLOv8",
+      highlights: ["96.0% mAP@IoU=0.5", "Custom COCO dataset", "Real-time visualization"],
+      tech: ["YOLOv8", "React", "Computer Vision"],
+      github: "https://github.com/raihan5802/Illegal-Dumping-Garbage-Detection-Segmentation"
     },
     {
       title: "Netflix Data Analysis",
@@ -65,12 +70,12 @@ export default function Home() {
   ];
 
   const skills = {
-    "Programming": ["Python", "JavaScript"],
-    "AI/ML": ["PyTorch", "TensorFlow", "YOLO", "Detectron2"],
+    "Programming": ["Python", "JavaScript", "SQL"],
+    "AI/ML": ["PyTorch", "TensorFlow", "YOLO", "Detectron2", "Recommendation Systems", "Matrix Factorization"],
     "LLMs & AI": ["OpenAI APIs", "LangChain", "LlamaIndex", "Hugging Face"],
     "Web Development": ["React", "Flask", "Next.js", "React Native"],
-    "Data Science": ["Pandas", "NumPy", "Matplotlib", "Seaborn"],
-    "Tools": ["Git", "Docker", "Jupyter", "Google Colab"]
+    "Data Science": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Polars", "A/B Testing", "Statistical Analysis"],
+    "Cloud & DevOps": ["AWS SageMaker", "Git", "Docker", "Jupyter", "Google Colab"]
   };
 
   const achievements = [
@@ -94,7 +99,7 @@ export default function Home() {
               />
               <div className="text-center md:text-left">
                 <h1 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4">MD RAIHAN CHOWDHURY</h1>
-                <h2 className="text-lg md:text-xl mb-4 md:mb-6">Data Scientist @ Synnax Lab</h2>
+                <h2 className="text-lg md:text-xl mb-4 md:mb-6">Data Scientist @ Synnax Lab | North South University Graduate</h2>
                 <div className="flex flex-col md:flex-row flex-wrap gap-3 md:gap-4">
                   <a href="mailto:raihan5802@gmail.com" className="flex items-center justify-center md:justify-start gap-2 hover:text-blue-200">
                     <Mail className="w-5 h-5" />
@@ -129,7 +134,7 @@ export default function Home() {
         </div>
 
         <div className="flex flex-wrap gap-2 md:gap-4 border-b pb-4">
-          {['projects', 'skills', 'achievements'].map((section) => (
+          {['summary', 'projects', 'skills', 'achievements'].map((section) => (
             <button
               key={section}
               onClick={() => setActiveSection(section)}
@@ -145,6 +150,25 @@ export default function Home() {
         </div>
 
         <div className="grid gap-4 md:gap-6">
+          {activeSection === 'summary' && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            >
+              <Card className="hover:shadow-lg transition-shadow dark:bg-gray-800 dark:text-white">
+                <CardHeader>
+                  <CardTitle className="text-lg md:text-xl">Professional Summary</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm md:text-base text-gray-600 dark:text-gray-300">
+                    Data Scientist with hands-on experience developing recommendation systems and NLP applications, specializing in personalization models that deliver practical solutions. Demonstrated ability to independently process large-scale datasets and implement A/B testing frameworks for performance evaluation. Currently advancing skills in ML experimentation while building predictive modeling solutions at Synnax Lab. Recent graduate from North South University (CGPA: 3.23) with a passion for leveraging data-driven approaches to personalization and delivering measurable impact.
+                  </p>
+                </CardContent>
+              </Card>
+            </motion.div>
+          )}
+
           {activeSection === 'projects' && (
             <motion.div 
               className="grid md:grid-cols-2 gap-4 md:gap-6"
