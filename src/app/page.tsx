@@ -61,6 +61,18 @@ export default function Home() {
       github: "https://github.com/raihan5802/Illegal-Dumping-Garbage-Detection-Segmentation"
     },
     {
+  title: "Waste Patrol Detection & Segmentation",
+  description: "End-to-end garbage management solution with mobile reporting and authority dashboard for complaint handling and heatmap visualization.",
+  highlights: [
+    "Authority Portal with real-time heatmaps",
+    "React Native app for public complaint submission",
+    "CSV-based lightweight backend integration"
+  ],
+  tech: ["Flask", "React Native", "Leaflet.js", "Heatmap.js", "Python"],
+  github: "https://github.com/raihan5802/Waste-Patrol-Detection-Segmentation" 
+},
+
+    {
       title: "Netflix Data Analysis",
       description: "Comprehensive analysis of Netflix content patterns and predictions",
       highlights: ["R² ~0.999 with XGBoost", "ARIMA forecasting", "KMeans clustering"],
