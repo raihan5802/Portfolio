@@ -15,14 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MD Raihan Chowdhury | Data Scientist",
+  title: "MD Raihan Chowdhury | Software & AI Engineer",
   description:
-    "Portfolio of MD Raihan Chowdhury — Data Scientist specializing in recommendation systems, NLP, and AI applications.",
-  icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
-  },
+    "Portfolio of MD Raihan Chowdhury — Software & AI Systems Engineer building agentic AI, full-stack applications, and production pipelines.",
 };
 
 export default function RootLayout({
