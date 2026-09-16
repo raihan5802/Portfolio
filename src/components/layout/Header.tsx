@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { scrollToSection } from "@/lib/scroll-to-section";
 import LogoFlip from "./LogoFlip";
+import MobileNavMenu from "./MobileNavMenu";
 import NavLinks from "./NavLinks";
 import ScrollStatusBar from "./ScrollStatusBar";
 
@@ -61,14 +62,15 @@ export default function Header() {
             <div className="flex items-center justify-start">
               <LogoFlip />
             </div>
-            <div className="min-w-0">
+            <div className="hidden min-w-0 lg:block">
               <NavLinks />
             </div>
-            <div className="flex items-center justify-end">
+            <div className="flex items-center justify-end gap-2">
+              <MobileNavMenu />
               <button
                 type="button"
                 onClick={() => scrollToSection("contact")}
-                className="cta-get-in-touch cursor-pointer whitespace-nowrap rounded-full border border-[#0080B0]/60 bg-[#0080B0]/20 px-3 py-2 text-xs font-semibold text-[#DCDFD2] sm:px-5 sm:text-sm"
+                className="cta-get-in-touch hidden cursor-pointer whitespace-nowrap rounded-full border border-[#0080B0]/60 bg-[#0080B0]/20 px-5 py-2 text-sm font-semibold text-[#DCDFD2] lg:inline-flex"
               >
                 Get in touch
               </button>

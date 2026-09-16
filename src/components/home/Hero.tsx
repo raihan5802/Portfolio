@@ -74,7 +74,9 @@ export default function Hero() {
           </div>
         </div>
 
-        <InteractiveFace />
+        <div className="hidden lg:block">
+          <InteractiveFace />
+        </div>
       </div>
     </section>
   );
