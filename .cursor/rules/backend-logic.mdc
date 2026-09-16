@@ -1,0 +1,18 @@
+---
+description: Coding standards and structural logic logic for the Go/Node backend.
+globs: backend/**/*, schema.sql
+alwaysApply: false
+---
+
+# Backend Architecture & Logic Standards
+
+## 1. Defensive Programming & Logic
+
+- **Always handle errors explicitly.** Never drop, ignore, or use blank identifiers (`_`) for caught errors or rejected promises.
+- **Fail early.** Implement early returns or guard clauses to reduce nesting depth. Keep individual function logic under 30 lines; extract complex logic into small, testable utility functions.
+- **Data Integrity:** Cross-reference table structures directly with `schema.sql`. Never guess column names or data types.
+
+## 2. API Design
+
+- All payload entry points must run through schema validation before executing core business logic.
+- Return explicit HTTP status codes along with a standardized error object structure: `{ error: string, code: string }`.

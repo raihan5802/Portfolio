@@ -1,0 +1,18 @@
+---
+description: Enforces codebase consistency across Next.js UI components and state management.
+globs: frontend-nextjs/**/*
+alwaysApply: false
+---
+
+# Next.js Frontend Consistency Standards
+
+## 1. Code Consistency
+
+- **Component Pattern:** Use functional arrow components exclusively. Avoid legacy class structures.
+- **Strict Typing:** TypeScript strict mode is mandatory. Never bypass compile checks using the `any` type—use explicit interfaces or `unknown` combined with type guard narrowing instead.
+- **Imports:** Always use defined absolute path aliases (e.g., `@/components/`) rather than fragile relative directory lookups (`../../components`).
+
+## 2. Layout & Styles
+
+- Rely entirely on utility framework classes for styling layouts; do not instantiate raw layout properties in isolated component CSS files.
+- Enforce a strict mobile-first pattern by organizing classes using progressive responsive variants (`sm:`, `md:`, `lg:`).

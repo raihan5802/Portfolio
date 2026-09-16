@@ -1,0 +1,16 @@
+---
+description: Global token conservation and output style constraints.
+globs: *
+alwaysApply: true
+---
+
+# Token Efficiency and Output Constraints
+
+## 1. Response Style
+
+- **Be ultra-concise.** Omit conversational filler like "Sure, I can help with that" or "Here is the code." Jump straight to the solution.
+- **Do not rewrite unmodified code.** When updating a file, output only the specific lines or blocks being changed using standard diff markers or targeted replacement blocks. Do not print out the full, unchanged file.
+
+## 2. Context Scope
+
+- **Do not scan blindly.** When searching the codebase, target specific microservices (`/frontend-nextjs` or `/backend`) based strictly on the task context. Never read the entire workspace unless explicitly commanded via `@codebase`.

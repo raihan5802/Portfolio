@@ -1,0 +1,31 @@
+---
+description: Use this rule when the user says they want to debug workflow issues step-by-step.
+globs: **/*
+alwaysApply: false
+---
+
+# Systematic Workflow Debugging Protocol
+
+When the user asks to fix bugs or optimize a workflow step-by-step, follow this strict operational pipeline. Do not jump ahead.
+
+## 1. Discovery Phase
+
+- Inspect the relevant files in the targeted microservice (`/backend` or `/frontend-nextjs`).
+- If applicable, check `docker-compose.yml` or `schema.sql` to understand data shapes and environment variables.
+- Present the user with a concise summary of the bug and your proposed line-by-line fix.
+
+## 2. Execution & Review
+
+- Fix exactly ONE isolated bug at a time.
+- Do not modify unrelated files in the same turn.
+- After applying a fix, explicitly ask the user to verify the changes or run the local test command before moving to the next item.
+
+## 3. The Live Checklist
+
+At the end of EVERY response, output a clean markdown checklist showing the progress of the debugging session.
+
+Example:
+
+- [x] Step 1: Fix backend CORS issue in `cors.json`
+- [/] Step 2: Fix Next.js API route data fetching (Current Step)
+- [ ] Step 3: Verify Docker container communication

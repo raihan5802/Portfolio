@@ -1,0 +1,144 @@
+================================================================================
+PORTFOLIO DATA BACKUP
+Source: src/app/page.tsx
+Last updated: 2026-09-16
+================================================================================
+
+--------------------------------------------------------------------------------
+SUMMARY
+--------------------------------------------------------------------------------
+
+Data Scientist with hands-on experience developing recommendation systems and NLP applications, specializing in personalization models that deliver practical solutions. Demonstrated ability to independently process large-scale datasets and implement A/B testing frameworks for performance evaluation. Currently advancing skills in ML experimentation while building predictive modeling solutions at Synnax Lab. Recent graduate from North South University (CGPA: 3.23) with a passion for leveraging data-driven approaches to personalization and delivering measurable impact.
+
+--------------------------------------------------------------------------------
+PROJECTS
+--------------------------------------------------------------------------------
+
+[1] MovieLens Recommender System
+Description: Comprehensive recommendation system for personalized content suggestions, featuring A/B testing and large-scale data processing.
+Highlights:
+  - Multiple recommendation models with best RMSE of 0.87
+  - Statistical A/B testing framework with 1.39% CTR improvement
+  - Processed 500,000+ user interactions using Polars
+  - Flask API and AWS SageMaker deployment architecture
+Tech: Python, Recommendation Systems, A/B Testing, Polars, Flask, AWS SageMaker, Matrix Factorization, Collaborative Filtering
+GitHub: https://github.com/raihan5802/movielens-recommender
+
+[2] LLM Comparison Dashboard
+Description: An interactive dashboard that compares responses from multiple LLM models (GPT-4, Gemini Pro, Llama) side-by-side with performance metrics and analysis.
+Highlights:
+  - Multi-model API integration
+  - Real-time performance metrics
+  - Interactive response comparison
+  - Cross-model evaluation
+Tech: Next.js, React, TailwindCSS, Chart.js, OpenAI API, Google Generative AI (Gemini) API, Replicate API, JavaScript, RESTful APIs
+GitHub: https://github.com/raihan5802/llm-comparison-dashboard
+
+[3] BiasDetect
+Description: Lightweight ML framework for gendered language bias detection with advanced text classification capabilities.
+Highlights:
+  - F1 score of 0.8
+  - 11 trainable parameters
+  - TF-IDF & sentiment analysis
+  - Explainable AI visualization
+Tech: PyTorch, NLP, Neural Networks, Text Classification
+GitHub: https://github.com/raihan5802/BiasDetect
+
+[4] CV Analyzer
+Description: AI-powered resume analysis tool with LLM integration for comprehensive skill matching and candidate evaluation.
+Highlights:
+  - NLP analysis
+  - PDF processing
+  - Fault-tolerant design
+  - Custom skill extraction
+Tech: Next.js, Flask, spaCy, Document Processing
+GitHub: https://github.com/raihan5802/CV-Analyzer
+
+[5] Illegal Dumping Detection
+Description: AI-driven system for garbage dump detection using YOLOv8 with real-time monitoring capabilities for environmental protection.
+Highlights:
+  - 96.0% mAP@IoU=0.5
+  - Custom COCO dataset
+  - Real-time visualization
+  - Edge device compatibility
+Tech: YOLOv8, React, Computer Vision, Object Detection
+GitHub: https://github.com/raihan5802/Illegal-Dumping-Garbage-Detection-Segmentation
+
+[6] Waste Patrol Detection & Segmentation
+Description: End-to-end garbage management solution with mobile reporting and authority dashboard for complaint handling and heatmap visualization.
+Highlights:
+  - Authority Portal with real-time heatmaps
+  - React Native app for public complaint submission
+  - CSV-based lightweight backend integration
+  - Geospatial analysis capabilities
+Tech: Flask, React Native, Leaflet.js, Heatmap.js, Python, Geospatial Analysis
+GitHub: https://github.com/raihan5802/Waste-Patrol-Detection-Segmentation
+
+[7] Netflix Data Analysis
+Description: Comprehensive analysis of Netflix content patterns and predictions with detailed genre-based recommendation algorithms.
+Highlights:
+  - R² ~0.999 with XGBoost
+  - ARIMA forecasting
+  - KMeans clustering
+  - Content pattern recognition
+Tech: Python, Machine Learning, Data Analysis, Time Series Forecasting
+GitHub: https://github.com/raihan5802/Netflix-Data-Analysis
+
+--------------------------------------------------------------------------------
+SKILLS
+--------------------------------------------------------------------------------
+
+Programming:
+  - Python
+  - JavaScript
+  - SQL
+
+AI/ML:
+  - PyTorch
+  - TensorFlow
+  - YOLO
+  - Detectron2
+  - Recommendation Systems
+  - Matrix Factorization
+
+LLMs & AI:
+  - OpenAI APIs
+  - LangChain
+  - LlamaIndex
+  - Hugging Face
+
+Web Development:
+  - React
+  - Flask
+  - Next.js
+  - React Native
+
+Data Science:
+  - Pandas
+  - NumPy
+  - Matplotlib
+  - Seaborn
+  - Polars
+  - A/B Testing
+  - Statistical Analysis
+
+Cloud & DevOps:
+  - AWS SageMaker
+  - Git
+  - Docker
+  - Jupyter
+  - Google Colab
+
+--------------------------------------------------------------------------------
+ACHIEVEMENTS
+--------------------------------------------------------------------------------
+
+  - 2nd Position in HerWILL AI for Equality Datathon
+  - 22nd Position in Synnax Datathon
+  - Shortlisted in Cisco IoT Hackathon 2024
+  - Top 50 in Robi Datathon 3.0
+  - NSU ACM SC Innovation Challenge Award 2024
+
+Certifications:
+  - Foundations of Data Science — 95.50%
+  - Foundations: Data, Data, Everywhere — 98.25%
