@@ -48,7 +48,7 @@ export default function Header() {
     : { duration: 0.28, ease: [0.22, 1, 0.36, 1] as const };
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 overflow-x-hidden border-b border-white/10 bg-white/[0.06] backdrop-blur-xl backdrop-saturate-150">
+    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-white/[0.06] backdrop-blur-xl backdrop-saturate-150">
       <AnimatePresence mode="wait" initial={false}>
         {!isStatusBar ? (
           <motion.div

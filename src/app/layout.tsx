@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "MD Raihan Chowdhury | Data Scientist",
   description:
     "Portfolio of MD Raihan Chowdhury — Data Scientist specializing in recommendation systems, NLP, and AI applications.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({
