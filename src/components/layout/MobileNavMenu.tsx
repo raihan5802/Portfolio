@@ -75,7 +75,7 @@ export default function MobileNavMenu() {
               animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
               exit={reduceMotion ? undefined : { opacity: 0, y: -8 }}
               transition={panelTransition}
-              className="absolute right-0 top-[calc(100%+0.75rem)] z-50 w-[min(18rem,calc(100vw-2rem))] overflow-hidden rounded-2xl border border-white/15 bg-[#0f172a]/95 shadow-xl backdrop-blur-md"
+              className="fixed right-4 top-[3.75rem] z-50 w-[min(18rem,calc(100vw-2rem))] overflow-hidden rounded-2xl border border-white/15 bg-[#0f172a]/95 shadow-xl backdrop-blur-md"
             >
               <ul className="py-2">
                 {navItems.map((item) => {

@@ -103,7 +103,7 @@ export default function LogoFlip() {
       </Link>
 
       <motion.div
-        className="overflow-hidden"
+        className="hidden overflow-hidden lg:block"
         initial={false}
         animate={{
           maxWidth: active ? 132 : 0,

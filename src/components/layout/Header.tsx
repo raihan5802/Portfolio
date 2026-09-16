@@ -48,7 +48,7 @@ export default function Header() {
     : { duration: 0.28, ease: [0.22, 1, 0.36, 1] as const };
 
   return (
-    <header className="fixed inset-x-0 top-0 z-40 border-b border-white/10 bg-white/[0.06] backdrop-blur-xl backdrop-saturate-150">
+    <header className="fixed inset-x-0 top-0 z-40 overflow-x-hidden border-b border-white/10 bg-white/[0.06] backdrop-blur-xl backdrop-saturate-150">
       <AnimatePresence mode="wait" initial={false}>
         {!isStatusBar ? (
           <motion.div
@@ -57,15 +57,15 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={transition}
-            className="mx-auto grid max-w-7xl grid-cols-[auto_1fr_auto] items-center gap-3 px-4 py-3 sm:gap-6 sm:px-6 sm:py-4"
+            className="mx-auto flex w-full max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4 lg:grid lg:grid-cols-[auto_1fr_auto] lg:justify-normal lg:gap-6"
           >
-            <div className="flex items-center justify-start">
+            <div className="flex shrink-0 items-center justify-start">
               <LogoFlip />
             </div>
             <div className="hidden min-w-0 lg:block">
               <NavLinks />
             </div>
-            <div className="flex items-center justify-end gap-2">
+            <div className="flex shrink-0 items-center justify-end gap-2">
               <MobileNavMenu />
               <button
                 type="button"
